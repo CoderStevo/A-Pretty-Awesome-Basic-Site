@@ -1,25 +1,44 @@
+<!--Tells the browser that this is an HTML Document-->
 <!DOCTYPE html>
+<!--More metadata: Language, Page Title, Character Encoding Set, Linked CSS Sheet to use-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>A Pretty Awesome Basic Site</title>
 </head>
+<!--This Section is what actually gets displayed in the user's window-->
 <body>
-    <h1>The CSS.</h1>
+    <!--This is where the Header will go that sums up the central idea of the page-->
+	<header>
+        <h1>The CSS.</h1>
+    </header>
+    <!--A destinct section of the page to put some specific content-->
+    <section>
+    <!--The Nav will have links that the user can click to easily navigate to different pages of the site-->
     <nav>
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./html.html">HTML</a>
-        <a href="./js.html">JS</a>
+        <img src="html-css-js.png" alt="An image of the three basic web programming languages.">
+        <!--An Unordered List-->
+        <ul>
+            <!--List Items-->
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./html.html">HTML</a></li>
+            <li><a href="./js.html">JS</a></li>
+        </ul>
     </nav>
+    <!--A button to take the user to the previous page-->
+    <button onclick="html.html">Prev: HTML</button>
+    <!--A detailed write-up about a certain topic-->
     <article>
         <ul>
             <li>CSS stands for Cascading Style Sheets.</li>
         </ul>
     </article>
-    <button onclick="html.html">Prev: HTML</button>
+    <!--A button to take the user to the next page-->
     <button onclick="js.html">Next: JS</button>
+    </section>
     <footer>Copyright 2023 <a href="https://stephenhammonds.com">Stephen Hammonds LLC</a></footer>
 </body>
 </html>
