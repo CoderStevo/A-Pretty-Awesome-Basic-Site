@@ -1,53 +1,59 @@
+/*Using the universal selector to set box-sizing to border-box and background to darkgray*/
 *{
     box-sizing: border-box;
     background: darkgray;
 }
 
+/*Centering the header horizontally and adding a 2px solid black border to the bottom of it*/
 header {
     text-align: center;
     border-bottom: 2px solid black;
 }
 
+/*The section element contains the nav, buttons, and article elements. The elements nested inside of the section element will be displayed as distinct rows with equal space between them. The line-height will be two times the current font-size, which is set to large. The overall height of the section element will be 800px*/
 section {
     display: flex;
     justify-content: space-between;
     font-size: large;
     line-height: 2em;
     border-bottom: 2px solid black;
+    height: 800px;
 }
 
+/*The nav will have a 2px solid black border on the right*/
 nav {
     border-right: 2px solid black;
 }
 
-img {
+/*Specifically selecting the image that is nested inside the nav, the image is re-sized to fit in the space we need it in. 150px wide and the height will be automatically calculated to retain its original aspect ratio so that the image does not become distorted*/
+nav>img {
     width: 150px;
     height: auto;
 }
 
+/*Specifically selecting the unordered list that is nested inside of the nav element, we give it a list style of none so it will not have bullet points*/ 
 nav>ul {
     list-style: none; 
 }
 
+/*The article will take up 45% of the available width, have a larger font-size, be indented by 3 times the font-size, and have a padding all around of 3 times the font-size*/
 article {
-    height: 75%;
     width: 45%;
     font-size: larger;
     text-indent: 3em;
     padding: 3em;
 }
 
+/*The button will align itself at the end ofthe flex container, have a background color of hotpink, have a padding al around equal to the text-size, and have a border-radius of 8px*/
 button {
     align-self: flex-end;
     background: hotpink;
     padding: 1em;
-    
     border-radius: 8px;
 }
 
+/*The footer will have a display property of fixed so it will remain fixed in position on the page at all times and the text will be aligned in the center of the screen*/
 footer {
-
-   
     display: fixed;
     text-align: center;
 }
