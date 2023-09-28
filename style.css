@@ -10,14 +10,16 @@ header {
     border-bottom: 2px solid black;
 }
 
-/*The section element contains the nav, buttons, and article elements. The elements nested inside of the section element will be displayed as distinct rows with equal space between them. The line-height will be two times the current font-size, which is set to large. The overall height of the section element will be 800px*/
+/*The section element contains the nav, buttons, and article elements. The elements nested inside of the section element will be displayed as distinct rows with equal space between them. 
+The line-height will be two times the current font-size, which is set to large. The minimum overall height of the section element will be 800px, and there will be a 10px margin at the bottom.*/
 section {
     display: flex;
     justify-content: space-between;
     font-size: large;
     line-height: 2em;
     border-bottom: 2px solid black;
-    height: 800px;
+    min-height: 800px;
+    margin-bottom: 10px;
 }
 
 /*The nav will have a 2px solid black border on the right*/
@@ -25,7 +27,8 @@ nav {
     border-right: 2px solid black;
 }
 
-/*Specifically selecting the image that is nested inside the nav, the image is re-sized to fit in the space we need it in. 150px wide and the height will be automatically calculated to retain its original aspect ratio so that the image does not become distorted*/
+/*Specifically selecting the image that is nested inside the nav, the image is re-sized to fit in the space we need it in. 
+It will be 150px wide and the height will be automatically calculated to retain its original aspect ratio so that the image does not become distorted*/
 nav>img {
     width: 150px;
     height: auto;
@@ -57,4 +60,3 @@ footer {
     display: fixed;
     text-align: center;
 }
-
